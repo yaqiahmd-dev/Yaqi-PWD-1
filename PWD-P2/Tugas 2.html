@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Mahasiswa</title>
+</head>
+<body>
+
+    <h2>Form Mahasiswa</h2>
+
+    <form>
+        <!-- Fieldset 1: Data Mahasiswa -->
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>NPM</td>
+                    <td>:</td>
+                    <td><input type="text" name="npm"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>:</td>
+                    <td>
+                        <select name="kelas">
+                            <option value="-">-</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk" value="Pria"> Pria
+                        <input type="radio" name="jk" value="Wanita"> Wanita
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 2: Tempat Tinggal Mahasiswa -->
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <table>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Kecamatan</td>
+                    <td>:</td>
+                    <td><input type="text" name="kecamatan"></td>
+                </tr>
+                <tr>
+                    <td>Kabupaten/Kotamadya</td>
+                    <td>:</td>
+                    <td><input type="text" name="kotamadya"></td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td><input type="text" name="provinsi"></td>
+                </tr>
+                <tr>
+                    <td>Kode Pos</td>
+                    <td>:</td>
+                    <td><input type="text" name="kodepos"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 3: Lain-lain -->
+        <fieldset>
+            <legend>Lain-lain</legend>
+            <table>
+                <tr>
+                    <td>Bahasa Pemrograman</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="lang" value="C/C++"> C/C++
+                        <input type="checkbox" name="lang" value="Go Lang"> Go Lang
+                        <input type="checkbox" name="lang" value="Python"> Python
+                        <input type="checkbox" name="lang" value="Lainnya"> Lainnya <br>
+                        <input type="checkbox" name="lang" value="PHP"> PHP
+                        <input type="checkbox" name="lang" value="Javascript"> Javascript
+                        <input type="checkbox" name="lang" value="Ruby"> Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kegiatan</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="kegiatan" value="Organisasi Kemahasiswaan"> Organisasi Kemahasiswaan
+                        <input type="checkbox" name="kegiatan" value="Bidang Olahraga"> Bidang Olahraga
+                        <input type="checkbox" name="kegiatan" value="Lainnya"> Lainnya <br>
+                        <input type="checkbox" name="kegiatan" value="Organisasi di Luar Kampus"> Organisasi di Luar Kampus
+                        <input type="checkbox" name="kegiatan" value="Bidang Seni"> Bidang Seni
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Tombol Reset & Submit -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
